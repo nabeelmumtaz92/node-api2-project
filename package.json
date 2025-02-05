@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
+    "express" : "^4.17.1",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
